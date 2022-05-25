@@ -6,4 +6,9 @@
 // document.querySelectorAll('selector css') // array of elements
 
 const clock = document.querySelector('.clock');
-clock.innerHTML = new Date().toLocaleTimeString;
+
+function updateClock() {
+    clock.innerHTML = new Date().toLocaleTimeString;
+}
+
+setInterval(updateClock, 1000);
